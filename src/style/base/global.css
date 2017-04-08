@@ -1,0 +1,74 @@
+.layout .layout-main{
+  width: auto;
+  margin:0 15px;
+}
+.layout-main {
+  width: 1130px;
+  position: relative;
+  margin: 0 auto;
+}
+.layout-tab>.layout-tab-title{
+  border-bottom: 2px solid #3399FF;
+}
+.layout-tab-title {
+  position: relative;
+  left: 0;
+  height: 40px;
+  white-space: nowrap;
+  border-bottom: 2px solid #3399FF;
+  font-size: 0;
+  transition: all .2s;
+  -webkit-transition: all .2s
+}
+
+.layout-tab-title li {
+  *display: inline;
+  font-size: 14px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  position: relative;
+  line-height: 40px;
+  min-width: 65px;
+  padding: 0 10px
+}
+.layout-tab-title li{
+  cursor: pointer;
+  text-align: center;
+}
+.layout-tab-title li{
+  display: inline-block;
+  *zoom: 1;
+  vertical-align: middle
+}
+.layout-slider{
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  background: #464C5B;
+  width:210px;
+
+}
+.layout-body{
+  position: absolute;
+  left: 210px;
+  right: 0;
+  top: 70px;
+  bottom: 44px;
+  z-index: 800;
+  width: auto;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+}
+.layout-content{
+  position: absolute;
+  top:40px;
+  bottom: 0;
+  left:0;
+  right:0;
+  background: #f2f2f2;
+}
+

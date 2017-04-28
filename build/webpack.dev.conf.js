@@ -5,6 +5,7 @@ var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
+var CompressionPlugin = require("compression-webpack-plugin")
 
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
@@ -19,7 +20,8 @@ module.exports = merge(baseWebpackConfig, {
   devtool: '#cheap-module-eval-source-map',
   plugins: [
     new webpack.DefinePlugin({
-      'process.env': config.dev.env
+      // 'process.env': config.dev.env
+      'process.env.NODE_ENV': '"production"'
     }),
     // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
     new webpack.HotModuleReplacementPlugin(),
@@ -29,6 +31,29 @@ module.exports = merge(baseWebpackConfig, {
       filename: 'index.html',
       template: 'index.html',
       inject: true
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      comments: false,        //去掉注释
+      compress: {
+        warnings: false    //忽略警告,要不然会有一大堆的黄色字体出现……
+      }
+    }),
+    // //在 plugin 中添加
+    // new CompressionWebpackPlugin({ //gzip 压缩
+    //   asset: '[path].gz[query]',
+    //   algorithm: 'gzip',
+    //   test: new RegExp(
+    //     '\\.(js|css)$'    //压缩 js 与 css
+    //   ),
+    //   threshold: 10240,
+    //   minRatio: 0.8
+    // }),
+    new CompressionPlugin({
+      asset: "[path].gz[query]",
+      algorithm: "gzip",
+      test: /\.(js|html)$/,
+      threshold: 10240,
+      minRatio: 0.8
     }),
     new FriendlyErrorsPlugin()
   ]

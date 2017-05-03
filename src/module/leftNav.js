@@ -1,25 +1,17 @@
 /**
  * Created by Administrator on 2017/4/10.
  */
-
-  // function getConfig() {
-  //
-  // }
-  // getConfig.prototype=config;
-  // getConfig.prototype.nav=[
-  //   ];
-
 function navConfig() {}
 navConfig.prototype.nav=[];
-var config=new navConfig(); //
-var ymzs=new navConfig(); //
+var config=new navConfig();
+var ymzs=new navConfig();
 ymzs.nav=[
   {
-    nodeName: "接种",
+    nodeName: "基本元素",
     nodeId: 'node1',
     isActive: false,
     childrens: [{
-      nodeName: '建档接种',
+      nodeName: '按钮',
       nodeId: 'node1-1',
       parentId:'node1',
       select:true,
@@ -27,15 +19,33 @@ ymzs.nav=[
     }]
   },
   {
-    nodeName: "接种日志",
+    nodeName: "组件",
     nodeId: 'node2',
     isActive: false,
     childrens: [{
-      nodeName: '接种情况分析',
+      nodeName: 'DataTable',
       nodeId: 'node2-1',
       parentId:'node2',
       select:false,
       reflink: '/obd/2'
+    },{
+      nodeName: 'MarkDown',
+      nodeId: 'node2-2',
+      parentId:'node2',
+      select:false,
+      reflink: '/obd/2-1'
+    }]
+  },
+  {
+    nodeName: "第三方组件",
+    nodeId: 'node3',
+    isActive: false,
+    childrens: [{
+      nodeName: 'iCheck组件',
+      nodeId: 'node2-1',
+      parentId:'node2',
+      select:false,
+      reflink: '/obd/3'
     }]
   }
 ];

@@ -1,7 +1,10 @@
 # 基于Vue+iview的单页面管理后台框架
-
-##### 动态加载路由
-        export  default new Router({
+使用的技术点：
+* [vue](https://cn.vuejs.org/)
+* [iview](https://www.iviewui.com/docs/guide/start)
+##### 动态加载路由 src/config/routes-vaccine.js
+```javascript
+    export  default new Router({
             routes: [
               {
                   //根路由跳转
@@ -24,3 +27,7 @@
                   component:content
             }]
         })
+```
+#####QQ:12826209
+#####Wechat:lh7364526
+欢迎交流！

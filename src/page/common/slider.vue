@@ -42,7 +42,6 @@
           </i-col>
         </Row>
       </div>
-
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 # 基于Vue+iview的单页面管理后台框架
-![vue-iview-master](static/img.jpg)
+![vue-iview-master](static/Img.jpg)
 使用的技术点：
 * vue-cli
 * [vue](https://cn.vuejs.org/)

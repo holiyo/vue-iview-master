@@ -10,8 +10,6 @@ export  default new Router({
       {
           path: '/',
           redirect:'/obd/1'
-          // name:'hello',
-          // component:Hello
     },{
           path:'/obd',
           name:'obd',

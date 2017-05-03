@@ -1,4 +1,5 @@
 # 基于Vue+iview的单页面管理后台框架
+左侧导航菜单，右侧内容页面
 ![vue-iview-master](static/img.jpg)
 使用的技术点：
 * vue-cli

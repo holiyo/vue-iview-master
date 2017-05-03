@@ -1,5 +1,7 @@
 # 基于Vue+iview的单页面管理后台框架
+![vue-iview-master](static/img.jpg)
 使用的技术点：
+* vue-cli
 * [vue](https://cn.vuejs.org/)
 * [iview](https://www.iviewui.com/docs/guide/start)
 ##### 动态加载路由 src/config/routes-vaccine.js

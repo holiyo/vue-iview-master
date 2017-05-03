@@ -7,7 +7,7 @@
       </Form-item>
       </i-col>
       <i-col span="6">
-      <Form-item label="免疫卡号">
+      <Form-item label="卡号">
         <Input v-model="formItem.input" placeholder="请输入"></Input>
       </Form-item>
       </i-col>
@@ -27,7 +27,7 @@
     </Row>
     <Row>
       <i-col span="6">
-      <Form-item label="接种日期">
+      <Form-item label="日期">
         <Select v-model="formItem.select" placeholder="请选择">
           <Option value="week">最近一周内</Option>
           <Option value="mouth">最近一个月</Option>

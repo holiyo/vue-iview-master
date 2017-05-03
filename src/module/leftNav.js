@@ -42,8 +42,8 @@ ymzs.nav=[
     isActive: false,
     childrens: [{
       nodeName: 'iCheck组件',
-      nodeId: 'node2-1',
-      parentId:'node2',
+      nodeId: 'node3-1',
+      parentId:'node3',
       select:false,
       reflink: '/obd/3'
     }]

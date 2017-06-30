@@ -101,6 +101,7 @@
     data () {
       return {
         self:this,
+        flag:'lihoo',
         formItem: {
           input: '',
           select: '',
@@ -110,7 +111,9 @@
           date: '',
           time: '',
           slider: [20, 50],
-          textarea: ''
+          textarea: '',
+
+
         },
         columns4: [
           {
@@ -171,7 +174,7 @@
             width:90,
             key:  'doctor',
             render (row, column, index) {
-              return '<i-button type="primary" size="small" @click="show('+index+')">查看</i-button>';
+              return '<i-button type="primary" size="small" @click="show('+index+')"></i-button>';
             }
           }
         ],
@@ -243,6 +246,12 @@
     },
     activated(){
 //      this.sendrouter();
+    },created(){
+        debugger;
+        function Person(){
+
+        }
+        var person=new Person();
     }
   }
 </script>

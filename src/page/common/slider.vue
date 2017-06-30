@@ -3,7 +3,7 @@
     <div class="layout-slider">
       <Row type="flex">
         <i-col span="24" class="">
-          <Menu :active-name="leftNav[0].childrens[0].nodeId" theme="dark" width="auto" :open-names="[]">
+          <Menu :active-name="leftNav[0].childrens[0].nodeId"   theme="dark" width="auto" :open-names="[]">
             <div class="layout-logo-left"></div>
             <Submenu :name="left.nodeId" v-for="(left,$index) in leftNav" :key="left.nodeId">
               <template slot="title">
@@ -18,6 +18,7 @@
           </Menu>
         </i-col>
       </Row>
+
     </div>
     <div class="layout-body">
       <div class="layout-tab">
